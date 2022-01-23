@@ -202,5 +202,5 @@ double getDuration(double years, double couponRate, double bondPrice, int compou
 double getYield(double years, double couponRate, double bondPrice, std::string compoundingStr)
 {
     int paymentFreqInt = convertPaymentStringToEnum(compoundingStr);
-    getYield(years, couponRate, bondPrice, paymentFreqInt);
+    return getYield(years, couponRate, bondPrice, paymentFreqInt);
 }

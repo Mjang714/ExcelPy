@@ -1,4 +1,5 @@
 #include <vector>
+#include <string>
 
 #ifndef _BONDMATH_H
 #define _BONDMATH_H
@@ -29,8 +30,8 @@
     double computeFiniteDifference(double bondPrice, double bondDuration, double difference);
     double computeDV01(double bondPrice, double bondDuration);
 	double getYield(double years, double couponRate, double bondPrice, int compounding);
-	double getDuration(double years, double couponRate, double bondPrice, int compounding);
     double getYield(double years, double couponRate, double bondPrice, std::string compoundingStr);
+	double getDuration(double years, double couponRate, double bondPrice, int compounding);
     //double getDuration(double years, double couponRate, double bondPrice, std::string compoundingStr);
 
 #endif 

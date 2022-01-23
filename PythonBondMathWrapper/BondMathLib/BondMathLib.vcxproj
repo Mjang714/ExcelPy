@@ -19,6 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CashFlow.cpp" />
+    <ClCompile Include="Securities.cpp" />
     <ClCompile Include="BondMath.cpp" />
     <ClCompile Include="PythonBondMathWrapper.cpp">
       <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">#include "BondMath.h";C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python36_86\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -26,6 +28,8 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CashFlow.h" />
+    <ClInclude Include="Securities.h" />
     <ClInclude Include="BondMath.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -110,6 +114,7 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.752.0_x64__qbz5n2kfra8p0\Include;C:\Users\mjang\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pybind11\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <AdditionalLibraryDirectories>C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.752.0_x64__qbz5n2kfra8p0\libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
